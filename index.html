@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>TypeIt</title>
+</head>
+<body>
+
+    <div class=" div-icono div-icono-ad">
+        <img src="img/qr.png" alt="qr">
+    </div>
+
+    <div class="div-icono div-icono-info">
+        <h2>¿Cómo funciona el juego?</h2>
+        <p>Hay que adivinar la palabra oculta en 6 intentos, el color de las letras cambia para mostrar lo cerca que estás.</p>
+        <h3>Ejemplo: </h3>
+        <div class="div-palabra-ejemplo">
+            <input type="text" value="M" readonly style="background-color: var(--letra-verde);">
+            <input type="text" value="E" readonly style="background-color: var(--letra-gris);">
+            <input type="text" value="D" readonly style="background-color: var(--letra-amarilla);">
+            <input type="text" value="I" readonly style="background-color: var(--letra-gris);">
+            <input type="text" value="O" readonly style="background-color: var(--letra-verde);">
+        </div>
+        <div id="colores-letras">
+            <div class="div-palabra-ejemplo div-palabra-ejemplo2">
+                <div class="grupo-letras">
+                    <div>
+                        <input type="text" value="E" class="letras grises-ejemplo" readonly style="background-color: var(--letra-gris);">
+                        <input type="text" value="I" class="letras grises-ejemplo" readonly style="background-color: var(--letra-gris);">
+                    </div>
+                    <p>No está en la palabra</p>
+                </div>
+                <hr>
+                <div class="grupo-letras">
+                    <input type="text" value="D" class="letras amarilla-ejemplo" readonly style="background-color: var(--letra-amarilla);">
+                    <p>Está en la palabra pero en el lugar equivocado</p>
+                </div>
+                <hr>
+                <div class="grupo-letras">
+                    <div>
+                        <input type="text" value="M" class="letras verdes-ejemplo" readonly style="background-color: var(--letra-verde);">  
+                        <input type="text" value="O" class="letras verdes-ejemplo" readonly style="background-color: var(--letra-verde);">
+                    </div>
+                    <p>Está en la palabra y en el lugar correcto</p>
+                </div>
+            </div>
+        </div>
+        <div id="div-volver">
+            <p id="btn-volver">Volver</p>
+        </div>
+    </div> 
+
+    <header>
+        <div id="div-logo">
+            <img src="img/icono.png" alt="logo" id="img-logo">
+            <h1>Type <span>It</span></h1>
+        </div>
+        <div id="div-iconos">
+            <img src="img/escaner.png" alt="" id="btn-qr" class="btn">
+            <img src="img/informacion.png" alt="" id="btn-info" class="btn">
+        </div>
+    </header>
+
+    <h2 id="h2-resultado">¡Adivina la palabra!</h2>
+
+    <main>
+        <div class="div-palabra" id="fila1">
+            <input type="text" name="" id="" maxlength="1" class="input-f1" autofocus>
+            <input type="text" name="" id="" maxlength="1" class="input-f1">
+            <input type="text" name="" id="" maxlength="1" class="input-f1">
+            <input type="text" name="" id="" maxlength="1" class="input-f1">
+            <input type="text" name="" id="" maxlength="1" class="input-f1">
+        </div>
+        <div class="div-palabra" id="fila2">
+            <input type="text" name="" id="" maxlength="1" class="input-f2">
+            <input type="text" name="" id="" maxlength="1" class="input-f2">
+            <input type="text" name="" id="" maxlength="1" class="input-f2">
+            <input type="text" name="" id="" maxlength="1" class="input-f2">
+            <input type="text" name="" id="" maxlength="1" class="input-f2">
+        </div>
+        <div class="div-palabra" id="fila3">
+            <input type="text" name="" id="" maxlength="1" class="input-f3">
+            <input type="text" name="" id="" maxlength="1" class="input-f3">
+            <input type="text" name="" id="" maxlength="1" class="input-f3">
+            <input type="text" name="" id="" maxlength="1" class="input-f3">
+            <input type="text" name="" id="" maxlength="1" class="input-f3">
+        </div>
+        <div class="div-palabra" id="fila4">
+            <input type="text" name="" id="" maxlength="1" class="input-f4">
+            <input type="text" name="" id="" maxlength="1" class="input-f4">
+            <input type="text" name="" id="" maxlength="1" class="input-f4">
+            <input type="text" name="" id="" maxlength="1" class="input-f4">
+            <input type="text" name="" id="" maxlength="1" class="input-f4">
+        </div>
+        <div class="div-palabra" id="fila5">
+            <input type="text" name="" id="" maxlength="1" class="input-f5">
+            <input type="text" name="" id="" maxlength="1" class="input-f5">
+            <input type="text" name="" id="" maxlength="1" class="input-f5">
+            <input type="text" name="" id="" maxlength="1" class="input-f5">
+            <input type="text" name="" id="" maxlength="1" class="input-f5">
+        </div>
+        <div class="div-palabra" id="fila6">
+            <input type="text" name="" id="" maxlength="1" class="input-f6">
+            <input type="text" name="" id="" maxlength="1" class="input-f6">
+            <input type="text" name="" id="" maxlength="1" class="input-f6">
+            <input type="text" name="" id="" maxlength="1" class="input-f6">
+            <input type="text" name="" id="" maxlength="1" class="input-f6">
+        </div>
+    </main>
+
+    <div id="div-alerta">
+        <img src="img/reiniciar.png" alt="reiniciar" id="img-reinicio">
+        <h3 id="h3-resultado"></h3>
+    </div>
+    
+    <script src="js/codigo.js"></script>
+</body>
+</html>
